@@ -1,0 +1,79 @@
+[package]
+name = "drone-ti-sl-map-pieces"
+version = "0.12.0"
+authors = ["Valentine Valyaeff <valentine.valyaeff@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/drone-os/drone-ti-sl-map"
+homepage = "https://www.drone-os.com/"
+documentation = "https://api.drone-os.com/drone-ti-sl-map/0.12/drone_ti_sl_map_pieces/"
+license = "MIT OR Apache-2.0"
+description = """
+Texas Instruments SimpleLink peripheral mappings for Drone, an Embedded Operating System.
+"""
+
+[lib]
+path = "lib.rs"
+
+[features]
+default = []
+bit-band = ["drone-cortex-m/bit-band"]
+
+[dependencies.drone-core]
+version = "0.12.0"
+path = "../../../drone-core"
+
+[dependencies.drone-cortex-m]
+version = "0.12.0"
+path = "../../../drone-cortex-m"
+
+[dependencies.drone-ti-sl-map-pieces-1]
+version = "=0.12.0"
+path = "1"
+
+[dependencies.drone-ti-sl-map-pieces-2]
+version = "=0.12.0"
+path = "2"
+
+[dependencies.drone-ti-sl-map-pieces-3]
+version = "=0.12.0"
+path = "3"
+
+[dependencies.drone-ti-sl-map-pieces-4]
+version = "=0.12.0"
+path = "4"
+
+[dependencies.drone-ti-sl-map-pieces-5]
+version = "=0.12.0"
+path = "5"
+
+[dependencies.drone-ti-sl-map-pieces-6]
+version = "=0.12.0"
+path = "6"
+
+[dependencies.drone-ti-sl-map-pieces-7]
+version = "=0.12.0"
+path = "7"
+
+[dependencies.drone-ti-sl-map-pieces-8]
+version = "=0.12.0"
+path = "8"
+
+[dependencies.drone-ti-sl-map-pieces-9]
+version = "=0.12.0"
+path = "9"
+
+[dependencies.drone-ti-sl-map-pieces-10]
+version = "=0.12.0"
+path = "10"
+
+[dependencies.drone-ti-sl-map-pieces-11]
+version = "=0.12.0"
+path = "11"
+
+[dependencies.drone-ti-sl-map-pieces-12]
+version = "=0.12.0"
+path = "12"
+
+[build-dependencies.drone-ti-sl-map-svd]
+version = "=0.12.0"
+path = "../../svd"

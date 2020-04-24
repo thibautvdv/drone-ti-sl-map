@@ -1,0 +1,65 @@
+[workspace]
+members = [
+    "svd",
+    "src/pieces",
+    "src/pieces/1",
+    "src/pieces/2",
+    "src/pieces/3",
+    "src/pieces/4",
+    "src/pieces/5",
+    "src/pieces/6",
+    "src/pieces/7",
+    "src/pieces/8",
+    "src/pieces/9",
+    "src/pieces/10",
+    "src/pieces/11",
+    "src/pieces/12",
+]
+
+[package]
+name = "drone-ti-sl-map"
+version = "0.12.0"
+authors = ["Valentine Valyaeff <valentine.valyaeff@gmail.com>", "Thibaut Vandervelden <thvdveld@vub.be>"]
+edition = "2018"
+exclude = ["/svd_files"]
+repository = "https://github.com/drone-os/drone-ti-sl-map"
+homepage = "https://www.drone-os.com/"
+documentation = "https://api.drone-os.com/drone-ti-sl-map/0.12/drone_ti_sl_map/"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = [
+    "ti",
+    "simple-link",
+    "cortex",
+    "arm",
+    "bare-metal",
+]
+categories = [
+    "embedded",
+    "asynchronous",
+    "concurrency",
+    "no-std",
+    "hardware-support",
+]
+description = """
+Texas Instruments SimpleLink peripheral mappings for Drone, an Embedded Operating System.
+"""
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[features]
+default = []
+std = ["drone-core/std", "drone-cortex-m/std"]
+
+[dependencies.drone-core]
+version = "0.12.0"
+path = "../drone-core"
+
+[dependencies.drone-cortex-m]
+version = "0.12.0"
+path = "../drone-cortex-m"
+
+[dependencies.drone-ti-sl-map-pieces]
+version = "=0.12.0"
+path = "src/pieces"
